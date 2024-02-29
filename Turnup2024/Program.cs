@@ -24,3 +24,12 @@ IWebElement loginButton = driver.FindElement(By.XPath("//*[@id=\"loginForm\"]/fo
 loginButton.Click();
 
 //check if the user has logged in successfully
+IWebElement hellohari = driver.FindElement(By.XPath("//*[@id=\"logoutForm\"]/ul/li/a"));
+if (hellohari.Text == "Hello hari!")
+{
+    Console.WriteLine("Logged in successfully");
+}
+else {
+    Console.WriteLine("Login failed");
+
+}
